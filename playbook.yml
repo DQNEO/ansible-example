@@ -1,0 +1,9 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - name: install httpd
+      yum: name=httpd state=installed
+
+    - name: start and enable httpd
+      service: name=httpd state=running enabled=yes
