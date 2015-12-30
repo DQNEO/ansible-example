@@ -2,6 +2,15 @@
 - hosts: all
   sudo: yes
   tasks:
+    - name: install epel
+      yum: name=epel-release state=installed
+
+    - name: install nano
+      yum: name=nano state=installed
+
+    - name: install nginx
+      yum: name=nginx state=installed
+
     - name: install httpd
       yum: name=httpd state=installed
 
