@@ -1,0 +1,12 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+
+    - name: Add repository 'remi-repo'
+      command: rpm -ih http://rpms.famillecollet.com/enterprise/remi-release-7.rpm creates=/etc/yum.repos.d/remi.repo
+
+    - name: install php70
+      yum: name={{ item }} enablerepo=epel,remi,remi-php70 state=present
+      with_items:
+        - php70
