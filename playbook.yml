@@ -8,7 +8,13 @@
     - name: install nano
       yum: name=nano state=installed
 
+    - name: install git
+      yum: name=git state=installed
+
     - name: install nginx
       yum: name=nginx state=installed
+
+    - name: install docker
+      yum: name=docker state=installed
 
 
