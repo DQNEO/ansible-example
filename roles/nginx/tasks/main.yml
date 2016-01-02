@@ -2,3 +2,13 @@
   copy: src=nginx.repo dest=/etc/yum.repos.d/nginx.repo owner=root mode=0644
 - name: nginx install
   yum: name=nginx enablerepo=nginx state=installed
+- name: nginx garbage
+  file: path=/etc/nginx/conf.d state=absent
+- name: nginx garbage
+  file: path=/etc/nginx/default.d state=absent
+- name: nginx garbage
+  file: path=/etc/nginx/koi-utf state=absent
+- name: nginx garbage
+  file: path=/etc/nginx/koi-win state=absent
+- name: nginx garbage
+  file: path=/etc/nginx/win-utf state=absent
