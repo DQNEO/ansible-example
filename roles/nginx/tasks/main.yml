@@ -1,4 +1,4 @@
-- name: put a file
-  copy: src=hello.txt dest=/tmp/
+- name: setup nginx repo
+  copy: src=nginx.repo dest=/etc/yum.repos.d/nginx.repo owner=root mode=0644
 - name: nginx install
-  yum: name=nginx state=installed
+  yum: name=nginx enablerepo=nginx state=installed
