@@ -1,2 +1,4 @@
+- name: put a file
+  copy: src=hello.txt dest=/tmp/
 - name: nginx install
   yum: name=nginx state=installed
