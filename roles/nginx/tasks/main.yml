@@ -12,3 +12,8 @@
   file: path=/etc/nginx/koi-win state=absent
 - name: nginx garbage
   file: path=/etc/nginx/win-utf state=absent
+
+- name: nginx garbage
+  file: path=/etc/nginx/scgi_params state=absent
+- name: nginx garbage
+  file: path=/etc/nginx/uwsgi_params state=absent
