@@ -3,5 +3,5 @@
   sudo: yes
   roles:
     - dqneo-base
-    - php70
     - nginx
+    - php70
