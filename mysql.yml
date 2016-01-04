@@ -1,3 +1,4 @@
+# これはまだ全然仮実装です
 - hosts: all
   sudo: yes
   tasks:
