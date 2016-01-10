@@ -19,6 +19,6 @@
   file: path=/etc/nginx/uwsgi_params state=absent
 
 - name: nginx conf
-  copy: src=nginx.conf dest=/etc/nginx/nginx.conf owner=root group=root mode=0644
+  template: src=nginx.conf dest=/etc/nginx/nginx.conf owner=root group=root mode=0644
 - name: ltsv conf
-  copy: src=ltsv.conf dest=/etc/nginx/ltsv.conf owner=root group=root mode=0644
+  template: src=ltsv.conf dest=/etc/nginx/log_format_ltsv.conf owner=root group=root mode=0644
