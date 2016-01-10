@@ -1,0 +1,15 @@
+# これはまだ全然仮実装です
+- name: add repo
+  command: rpm -ih http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm creates=/etc/yum.repos.d/mysql.repo
+
+- name: install mysql-community-server
+  yum: name=mysql-community-server state=installed
+
+#- name: install repo
+#  yum: localinstall mysql57-community-release-el7-7.noarch.rpm
+#
+# sudo systemctl enable mysqld
+# sudo systemctl start mysqld
+#
+# sudo grep 'temporary password' /var/log/mysqld.log
+# mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';

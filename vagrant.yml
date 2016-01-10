@@ -10,6 +10,7 @@
     nginx_server_name: "localhost"
     nginx_root: "/usr/share/nginx/html"
   roles:
-    - dqneobase
-    - nginx
-    - php70
+    - mysql
+#    - dqneobase
+#    - nginx
+#    - php70
