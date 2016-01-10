@@ -1,6 +1,6 @@
 # これはまだ全然仮実装です
 - name: add repo
-  command: rpm -ih http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm creates=/etc/yum.repos.d/mysql.repo
+  command: rpm -ih http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm creates=/etc/yum.repos.d/mysql-community.repo
 
 - name: install mysql-community-server
   yum: name=mysql-community-server state=installed
