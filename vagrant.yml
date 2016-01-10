@@ -2,6 +2,6 @@
 - hosts: all
   sudo: yes
   roles:
-    - dqneo-base
+    - dqneobase
     - nginx
     - php70
