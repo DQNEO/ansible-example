@@ -14,5 +14,9 @@
 - name: save-mysql-tmp-password.sh
   script: save-mysql-tmp-password.sh creates=/root/.tmp.my.cnf
 
-  # sudo grep 'temporary password' /var/log/mysqld.log
-# mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+- name: set new password
+  script: change-root-password.sh creates=/root/.my.cnf
+
+- name: create new user
+  shell: mysql -e "GRANT ALL ON *.* TO pikachu IDENTIFIED BY 'FooBar12345@' "
+

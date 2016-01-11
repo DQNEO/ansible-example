@@ -15,5 +15,6 @@ cat > $tmp_file <<EOF
 [client]
 user=root
 password=$tmp_pass
+connect-expired-password
 EOF
 
