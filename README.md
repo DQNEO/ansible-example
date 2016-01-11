@@ -8,3 +8,11 @@ My Ansible Example to provision a LAMP server
  * PHP7
  * MySQL
  * Other basical tools
+
+## TODO
+* enable and start services
+* PHP fpm
+* configure php.ini
+* configure my.cnf
+* init DB
+
