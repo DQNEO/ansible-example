@@ -1,3 +1,4 @@
+# install MySQL 5.7 on CentOS7.1
 # これはまだ全然仮実装です
 - name: add repo
   command: rpm -ih http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm creates=/etc/yum.repos.d/mysql-community.repo
