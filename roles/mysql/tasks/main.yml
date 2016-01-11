@@ -5,6 +5,9 @@
 - name: install mysql-community-server
   yum: name=mysql-community-server state=installed
 
+- name: install MySQL-python for ansible mysql_user module
+  yum: name=MySQL-python state=installed
+
 - name: start server
   service: name=mysqld state=started enabled=yes
 
