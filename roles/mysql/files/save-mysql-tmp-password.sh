@@ -3,6 +3,7 @@
 set -eu
 log_file=/var/log/mysqld.log
 tmp_file=/root/.tmp.my.cnf
+umask 0077
 
 if [[ -e $tmp_file ]]; then
     exit 0
