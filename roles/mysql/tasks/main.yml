@@ -11,6 +11,8 @@
 - name: start server
   service: name=mysqld state=started enabled=yes
 
-#
-# sudo grep 'temporary password' /var/log/mysqld.log
+- name: save-mysql-tmp-password.sh
+  script: save-mysql-tmp-password.sh creates=/root/.tmp.my.cnf
+
+  # sudo grep 'temporary password' /var/log/mysqld.log
 # mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
