@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.box_check_update = false
 
-  config.vm.network "private_network", ip: "10.100.0.2"
+  config.vm.network "private_network", ip: "10.1.13.10"
 
   config.vm.provider "virtualbox" do |vb|
     vb.linked_clone = true
