@@ -1,9 +1,6 @@
 [submodule "roles/dqneobase"]
 	path = roles/dqneobase
 	url = git@github.com:DQNEO/ansible-role-dqneobase.git
-[submodule "roles/php70"]
-	path = roles/php70
-	url = git@github.com:DQNEO/ansible-role-php70.git
 [submodule "roles/nginx"]
 	path = roles/nginx
 	url = git@github.com:DQNEO/ansible-role-nginx.git
