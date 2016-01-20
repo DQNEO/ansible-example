@@ -4,3 +4,4 @@
   roles:
     - php7
     - nginx
+    - mysql
