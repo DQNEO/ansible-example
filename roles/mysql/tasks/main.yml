@@ -18,6 +18,9 @@
 - name: set new password
   script: change-root-password.sh creates=/root/.my.cnf
 
-- name: create new user
-  shell: mysql -e "GRANT ALL ON *.* TO pikachu IDENTIFIED BY 'FooBar12345@' "
+- name: create databases
+  script: create-databases.sh creates=/root/db_is_created
+
+#  - name: create new user
+#  shell: mysql -e "GRANT ALL ON *.* TO pikachu IDENTIFIED BY 'FooBar12345@' "
 
