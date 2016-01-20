@@ -19,8 +19,8 @@
   script: change-root-password.sh creates=/root/.my.cnf
 
 - name: create databases
-  script: create-databases.sh creates=/root/db_is_created
+  script: create-databases.sh creates=/root/db_created
 
 - name: create users and grants
-  script: create-grant-users.sh creates=/root/db_user_is_created
+  script: create-grant-users.sh creates=/root/db_user_created
 
