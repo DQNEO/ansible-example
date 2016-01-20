@@ -9,6 +9,9 @@
 - name: install MySQL-python for ansible mysql_user module
   yum: name=MySQL-python state=installed
 
+- name: put my.cnf file
+  copy: src=my.cnf dest=/etc/my.cnf owner=root mode=0644
+
 - name: start server
   service: name=mysqld state=started enabled=yes
 
