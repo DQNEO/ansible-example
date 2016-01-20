@@ -21,6 +21,6 @@
 - name: create databases
   script: create-databases.sh creates=/root/db_is_created
 
-#  - name: create new user
-#  shell: mysql -e "GRANT ALL ON *.* TO pikachu IDENTIFIED BY 'FooBar12345@' "
+- name: create users and grants
+  script: create-grant-users.sh creates=/root/db_user_is_created
 
